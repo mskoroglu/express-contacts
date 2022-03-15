@@ -1,0 +1,9 @@
+const path = require("path");
+const ormConfigDirectory = "src/config/orm/";
+
+module.exports = {
+  "config": path.resolve(`${ormConfigDirectory}config.js`),
+  "models-path": path.resolve(`${ormConfigDirectory}models`),
+  "seeders-path": path.resolve(`${ormConfigDirectory}seeders`),
+  "migrations-path": path.resolve(`${ormConfigDirectory}migrations`)
+};
